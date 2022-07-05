@@ -180,14 +180,14 @@
                <attList>
                   <attDef ident="source" mode="change" usage="req"/>
                </attList>
-               <constraintSpec ident="gallica" scheme="schematron">
+               <!--<constraintSpec ident="gallica" scheme="schematron">
                   <constraint>
                      <sch:rule context="tei:TEI/tei:teiHeader//tei:sourceDesc/tei:bibl">
                         <sch:assert test="./contains(@source, 'gallica.bnf.fr')" role="error">Mettre
                            le lien Gallica.</sch:assert>
                      </sch:rule>
-                  </constraint>
-               </constraintSpec>
+                  </constraint> 
+               </constraintSpec> -->
             </elementSpec>
             <elementSpec ident="profileDesc" mode="change">
                <content>
@@ -403,7 +403,7 @@
                      </valList>
                   </attDef>
                   <attDef ident="corresp" mode="add" usage="req"/>
-                  <attDef ident="facs" mode="add" usage="req"/>
+                  <attDef ident="facs" mode="change" usage="req"/>
                </attList>
             </elementSpec>
             <elementSpec ident="settlement" mode="change">

@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-07-05T15:10:40Z. .
+Schema generated from ODD source 2022-08-24T14:55:56Z. .
 TEI Edition: Version 4.3.0. Last updated on
         31st August 2021, revision b4f72b1ff
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -2131,7 +2131,7 @@ Elements]</a:documentation>
                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:TEI//tei:author">
-               <sch:assert test="./@ref/starts-with(.,'isni:') or ./@ref/starts-with(.,'viaf:') or ./@ref/starts-with(.,'IL:')"
+               <sch:assert test="./@ref/starts-with(.,'isni:') or ./@ref/starts-with(.,'viaf:') or ./@ref/starts-with(.,'IL:') or ./@ref/starts-with(.,'FRBNF') "
                            role="error">Vérifier la syntaxe de l'identifiant.</sch:assert>
             </sch:rule>
          </pattern>

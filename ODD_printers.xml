@@ -84,7 +84,7 @@
                   <constraint>
                      <sch:rule context="tei:TEI//tei:author">
                         <sch:assert
-                           test="./@ref/starts-with(.,'isni:') or ./@ref/starts-with(.,'viaf:') or ./@ref/starts-with(.,'IL:')"
+                           test="./@ref/starts-with(.,'isni:') or ./@ref/starts-with(.,'viaf:') or ./@ref/starts-with(.,'IL:') or ./@ref/starts-with(.,'FRBNF') "
                            role="error">Vérifier la syntaxe de l'identifiant.</sch:assert>
                      </sch:rule>
                   </constraint>
